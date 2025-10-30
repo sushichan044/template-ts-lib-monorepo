@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "pnpm -r run lint",
     "test": "vitest --run",
-    "format": "biome format --write .",
+    "format": "biome format --write",
+    "format:check": "biome format --reporter=github",
     "typecheck": "pnpm -r run typecheck",
     "build": "pnpm run -r build",
     "pkg-pr-new": "pkg-pr-new publish --compact --comment=update --pnpm",
@@ -15,7 +16,7 @@
   },
   "keywords": [],
   "author": "",
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.20.0",
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "catalog:biome",
