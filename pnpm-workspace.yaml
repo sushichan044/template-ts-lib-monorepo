@@ -1,25 +1,19 @@
 packages:
   - packages/**
 
-catalogs:
-  biome:
-    '@biomejs/biome': 2.3.2
-  build:
-    '@arethetypeswrong/core': 0.18.2
-    publint: 0.3.12
-    tsdown: 0.13.0
-    unplugin-unused: 0.5.1
-  eslint:
-    '@virtual-live-lab/eslint-config': 2.3.1
-    eslint: 9.38.0
-    typescript-eslint: 8.46.2
-  test:
-    fs-fixture: 2.8.1
-    vitest: 4.0.5
-  typescript:
-    '@virtual-live-lab/tsconfig': 2.1.21
-    typescript: 5.9.3
-    '@types/node': 24.9.1
+allowBuilds:
+  esbuild: true
 
-onlyBuiltDependencies:
-  - esbuild
+catalogs:
+  dev:
+    '@arethetypeswrong/core': 0.18.2
+    '@types/node': 25.9.1
+    '@typescript/native-preview': 7.0.0-dev.20260521.1
+    '@virtual-live-lab/tsconfig': 2.1.23
+    pkg-pr-new: 0.0.75
+    publint: 0.3.21
+    typescript: 6.0.3
+    unplugin-unused: 0.5.7
+    vite-plus: 0.1.22
+
+saveExact: true

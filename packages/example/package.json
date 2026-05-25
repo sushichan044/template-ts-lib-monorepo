@@ -2,61 +2,55 @@
   "name": "template-ts-lib-polyrepo",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "description": "",
-  "sideEffects": false,
-  "license": "",
   "keywords": [],
   "homepage": "https://github.com/sushichan044/template-ts-lib-monorepo#readme",
   "bugs": {
     "url": "https://github.com/sushichan044/template-ts-lib-monorepo/issues"
+  },
+  "license": "",
+  "author": {
+    "name": "sushichan044",
+    "url": "https://github.com/sushichan044"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sushichan044/template-ts-lib-monorepo.git",
     "directory": "packages/example"
   },
-  "author": {
-    "name": "sushichan044",
-    "url": "https://github.com/sushichan044"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/",
-    "provenance": true
-  },
   "funding": "https://github.com/sponsors/sushichan044",
-  "engines": {
-    "node": ">=20.19.0"
-  },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
       "import": "./dist/index.mjs"
-    }
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true,
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "lint": "eslint --max-warnings 0 --fix",
-    "format": "biome format --write",
-    "format:check": "biome format --reporter=github",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest --run",
-    "build": "tsdown",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "vp pack",
+    "build": "vp pack"
   },
   "devDependencies": {
-    "@arethetypeswrong/core": "catalog:build",
-    "@biomejs/biome": "catalog:biome",
-    "@types/node": "catalog:typescript",
-    "@virtual-live-lab/eslint-config": "catalog:eslint",
-    "@virtual-live-lab/tsconfig": "catalog:typescript",
-    "eslint": "catalog:eslint",
-    "publint": "catalog:build",
-    "tsdown": "catalog:build",
-    "typescript": "catalog:typescript",
-    "typescript-eslint": "catalog:eslint",
-    "unplugin-unused": "catalog:build",
-    "vitest": "catalog:test"
+    "@arethetypeswrong/core": "catalog:dev",
+    "@types/node": "catalog:dev",
+    "@typescript/native-preview": "catalog:dev",
+    "@virtual-live-lab/tsconfig": "catalog:dev",
+    "publint": "catalog:dev",
+    "typescript": "catalog:dev",
+    "unplugin-unused": "catalog:dev",
+    "vite-plus": "catalog:dev"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }
