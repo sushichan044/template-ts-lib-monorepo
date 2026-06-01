@@ -8,8 +8,8 @@
   "type": "module",
   "scripts": {
     "pkg-pr-new": "pkg-pr-new publish --compact --comment=update --pnpm",
-    "build": "pnpm -r run build",
-    "release": "pnpm run build && changeset publish",
+    "build": "vp run -r build",
+    "release": "vp run -r build && changeset publish",
     "changeset": "changeset"
   },
   "devDependencies": {
