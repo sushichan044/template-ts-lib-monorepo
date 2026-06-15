@@ -38,11 +38,6 @@ export default defineConfig({
       "vite-plus/prefer-vite-plus-imports": "error",
     },
   },
-  run: {
-    cache: {
-      scripts: true,
-    },
-  },
   test: {
     benchmark: {
       include: ["**/*.{bench,benchmark}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
