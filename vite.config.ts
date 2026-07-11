@@ -9,21 +9,23 @@ export default defineConfig({
     sortImports: true,
   },
   lint: {
+    jsPlugins: ["vite-plus/oxlint-plugin"],
     categories: {
       correctness: "error",
       nursery: "error",
       perf: "error",
     },
+    env: {
+      node: true,
+    },
     options: {
       typeAware: true,
       typeCheck: true,
     },
-    env: {
-      node: true,
-    },
-    jsPlugins: ["vite-plus/oxlint-plugin"],
+    plugins: ["import", "typescript", "node", "unicorn", "oxc"],
     rules: {
       "import/consistent-type-specifier-style": "error",
+
       "typescript/array-type": ["error", { default: "array-simple" }],
       "typescript/ban-ts-comment": "error",
       "typescript/consistent-type-assertions": "error",
@@ -34,14 +36,18 @@ export default defineConfig({
       "typescript/no-unnecessary-type-conversion": "error",
       "typescript/no-unsafe-call": "error",
       "typescript/non-nullable-type-assertion-style": "error",
+      "typescript/switch-exhaustiveness-check": "error",
+      "typescript/no-confusing-void-expression": "error",
+
       "node/no-path-concat": "error",
+
       "unicorn/custom-error-definition": "error",
       "unicorn/switch-case-braces": "error",
-      "typescript/switch-exhaustiveness-check": "error",
-      "oxc/branches-sharing-code": "error",
-      "unicorn/consistent-assert": "error",
-      "typescript/no-confusing-void-expression": "error",
       "unicorn/prefer-date-now": "error",
+      "unicorn/consistent-assert": "error",
+
+      "oxc/branches-sharing-code": "error",
+
       "vite-plus/prefer-vite-plus-imports": "error",
     },
     overrides: [
