@@ -21,5 +21,5 @@
     "typescript": "catalog:dev",
     "vite-plus": "catalog:dev"
   },
-  "packageManager": "pnpm@11.2.2"
+  "packageManager": "pnpm@11.11.0"
 }
