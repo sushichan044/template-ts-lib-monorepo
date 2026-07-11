@@ -22,7 +22,20 @@ export default defineConfig({
       typeAware: true,
       typeCheck: true,
     },
-    plugins: ["import", "typescript", "node", "unicorn", "oxc"],
+    plugins: [
+      // https://oxc.rs/docs/guide/usage/linter/plugins.html#supported-plugins
+      // enabled by default
+      "eslint",
+      "typescript",
+      "unicorn",
+      "oxc",
+
+      // optional
+      "import",
+      "node",
+      "promise",
+      "vitest",
+    ],
     rules: {
       "import/consistent-type-specifier-style": "error",
 
