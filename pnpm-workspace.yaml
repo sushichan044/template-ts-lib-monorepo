@@ -12,7 +12,7 @@ catalogs:
     "@virtual-live-lab/tsconfig": 2.1.23
     pkg-pr-new: 0.0.75
     publint: 0.3.21
-    typescript: 6.0.3
+    typescript: 7.0.2
     unplugin-unused: 0.5.7
     vite-plus: 0.2.4
 
