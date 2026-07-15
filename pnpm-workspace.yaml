@@ -6,11 +6,11 @@ allowBuilds:
 
 catalogs:
   dev:
-    "@arethetypeswrong/core": 0.18.3
+    "@arethetypeswrong/core": 0.18.5
     "@types/node": 26.1.1
     "@typescript/native-preview": 7.0.0-dev.20260618.1
     "@virtual-live-lab/tsconfig": 2.1.23
-    pkg-pr-new: 0.0.75
+    pkg-pr-new: 0.0.78
     publint: 0.3.21
     typescript: 6.0.3
     unplugin-unused: 0.5.7
