@@ -7,12 +7,12 @@ allowBuilds:
 catalogs:
   dev:
     "@arethetypeswrong/core": 0.18.5
-    "@types/node": 26.1.1
+    "@types/node": 26.1.2
     "@virtual-live-lab/tsconfig": 2.1.23
-    pkg-pr-new: 0.0.80
+    pkg-pr-new: 0.0.86
     publint: 0.3.22
     typescript: 7.0.2
-    unplugin-unused: 0.5.7
-    vite-plus: 0.2.6
+    unplugin-unused: 0.6.0
+    vite-plus: 0.2.7
 
 saveExact: true
