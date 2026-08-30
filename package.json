@@ -13,12 +13,12 @@
     "changeset": "changeset"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "0.7.0",
-    "@changesets/cli": "2.31.1",
+    "@changesets/changelog-github": "1.0.0",
+    "@changesets/cli": "3.0.1",
     "@virtual-live-lab/tsconfig": "catalog:dev",
     "pkg-pr-new": "catalog:dev",
     "typescript": "catalog:dev",
     "vite-plus": "catalog:dev"
   },
-  "packageManager": "pnpm@11.17.0"
+  "packageManager": "pnpm@12.1.0"
 }
