@@ -14,5 +14,13 @@ catalogs:
     typescript: 7.0.2
     unplugin-unused: 0.6.0
     vite-plus: 1.1.0
+    vite: npm:@voidzero-dev/vite-plus-core@1.1.0
 
 saveExact: true
+overrides:
+  vite@*: catalog:dev
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"
